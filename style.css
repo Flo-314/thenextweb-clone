@@ -216,6 +216,24 @@ border-radius: 2em;
     background-color: #F7F8F8;
     padding: 3em;
 }
+#exploreContainer{
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#exploreContainer h3{
+font-size: 2.5rem;
+margin-bottom: 1em;
+}
+#channels{
+    gap: 1em;
+
+}
+#channels img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 @media screen and (max-width: 1020px){
     #grayheader{
@@ -307,5 +325,7 @@ max-width: none;
     width: 100%;
     height: 80%;
 }
-
+#channels{
+    flex-direction: column;
+}
 }
