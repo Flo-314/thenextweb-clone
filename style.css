@@ -123,6 +123,7 @@ text-align: center;
 color: white;
 background-color: black;
     grid-area: new1;
+    width: 100%;
 
 }
 #news1 p{
@@ -132,22 +133,25 @@ background-color: black;
 #news2{
     grid-area: new2;
     background-color: black;
-
+    width: 100%;
 
 }
 #news3{
     grid-area: new3;
     background-color: black;
+    width: 100%;
 
     
 }#news4{
     grid-area: new4;
     background-color: black;
+    width: 100%;
 
 }
 #news5{
     grid-area: new5;
     background-color: black;
+    width: 100%;
 
     
 }
@@ -193,7 +197,7 @@ background-color: black;
     max-width: 1400px;
     margin: 0 auto; 
     padding: 4em 0 6em 0;
-    max-width: 90%;
+    width: 90%;
 
 }
 #latestStories h3{
@@ -271,6 +275,7 @@ margin-bottom: 1em;
 }
 #suscribeContainer{
     max-width: 1000px;
+    width: 90%;
 }
 #suscribe h3{
     font-size: 2.6rem;
@@ -302,6 +307,67 @@ padding: 0.8rem;
     font-size: 1rem;
 }
 
+#madeYou{
+    background-color: #F7F8F8;
+}
+#madeyouContainer{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding:  4em 0;
+}
+#madeyouContainer h2{
+    font-size: 2.5rem;
+    padding: 1em 0 ; 
+}
+#gridContainer{
+display: grid;
+grid-template-columns: 11fr 4fr;
+grid-template-areas: 
+"video scrollArticles";
+gap: 3em;
+}
+#scroll{
+    grid-area: scrollArticles;
+    overflow-x: scroll;
+    overflow-y:  scroll;
+    max-height: 750px;
+    width: 100%;
+    background: linear-gradient(transparent,#f7f8f8);
+}
+.video{
+    padding: 1em;
+}
+.video img{
+    width: 100%;
+}
+.video h3{
+    font-size: 1rem;
+}
+#videoContainer{
+    grid-area: video;
+    width: 100%;
+    height: 100%;
+}
+#videoContainer iframe{
+    width: 100%;
+    margin: 0px;
+    height: 80%;
+}
+#videoContainer div{
+    padding: 3em;
+    background-color: #000000;
+
+}
+#videoContainer h3{
+    color: white;
+    font-weight: 500;
+}
+#videoContainer h4{
+    color:  #A7AAB2;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
 @media screen and (max-width: 1020px){
     #grayheader{
         background-color: white;
@@ -338,7 +404,9 @@ padding: 0.8rem;
         "new2 new3"
         "new4 new5"
 }
-
+#newsGrid{
+    width: 100%;
+}
     #popularArticles ul{
         flex-direction: column;
         gap: 0;
@@ -394,5 +462,23 @@ max-width: none;
 }
 #channels{
     flex-direction: column;
+}
+
+
+#gridContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#scroll{
+    max-height: 320px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+iframe{
+    min-height: 450px;
 }
 }
