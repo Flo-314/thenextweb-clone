@@ -368,6 +368,60 @@ gap: 3em;
     font-size: 0.7rem;
     font-weight: normal;
 }
+
+#workwithusContainer{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 6em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#reachGoals h4{
+    color: #DD60B7;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.3em 0;
+}
+#reachGoals h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+#reachGoals p{
+    color: #505666;
+    font-size: 1.1rem;
+    padding: 1.5em 0;
+}
+#reachGoals button{
+    background-color: #00DDDD;
+    max-width: 150px;
+    padding: 1em;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#workLogos{
+display: grid;
+grid-template: 1fr 1fr/ 1fr 1fr;
+}
+#workLogos img{
+    max-width: 96px;
+    max-height: 96px;
+}
+#workLogos h4{
+    padding: 1em;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+footer{
+    background: black;
+}
+
+
 @media screen and (max-width: 1020px){
     #grayheader{
         background-color: white;
@@ -480,5 +534,12 @@ max-width: none;
 }
 iframe{
     min-height: 450px;
+}
+#workwithusContainer{
+    display: flex;
+    flex-direction: column;
+}
+#workLogos{
+    padding: 3em 0;
 }
 }
