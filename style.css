@@ -417,9 +417,22 @@ grid-template: 1fr 1fr/ 1fr 1fr;
     font-size: 1.2rem;
     color: black;
 }
+#workLogos div{
+    flex-direction: column;
+}
 footer{
     background: black;
+    color: white;
+    padding: 3em;
 }
+
+#footerContainer{
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
 
 
 @media screen and (max-width: 1020px){
@@ -541,5 +554,10 @@ iframe{
 }
 #workLogos{
     padding: 3em 0;
+}
+
+#linksContainer{
+    display: flex;
+    flex-direction: column;
 }
 }
